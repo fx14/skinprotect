@@ -1,0 +1,2337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<survey>
+    <surveyname>Product Questions</surveyname>
+    <!--Household products -->
+    <questions>
+        <question qid="1">
+            <qid>1</qid>
+            <questiondesc>Ha usato almeno un prodotto di puliza (p.es. detergente per piatti) almeno una volta negli ultimi 3 mesi?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="2" parentquestionID="1|7" valuecondition="Sì|Si">
+            <qid>2</qid>
+            <questiondesc>Sul prodotto è chiaramente visibile il codice a barre?</questiondesc>
+            <subtitle>Questa domanda verra' ripetuta per tutti i prodotti usati</subtitle>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì (Scansionare il codice a barre)</choice>
+                <choice>No (Indicare il nome del prodotto)</choice>
+            </choices>
+        </question>
+        <question qid="3" parentquestionID="2" valuecondition="No (Indicare il nome del prodotto)">
+            <qid>3</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="4" parentquestionID="2" valuecondition="Sì (Scansionare il codice a barre)">
+            <qid>4</qid>
+            <questiondesc>Scansionare il codice barre presente sul prodotto.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Detergente universale</choice>
+                <choice>Candeggina</choice>
+                <choice>Detergente liquido per piatti (p.es. Handy)</choice>
+                <choice>Detergente liquido per pulire la cucina</choice>
+                <choice>Spray per pulire la cucina</choice>
+                <choice>Detergente liquido per pulire il bagno</choice>
+                <choice>Spray per bagno</choice>
+                <choice>Detergente WC/gabinetto</choice>
+                <choice>Detergente liquido per pavimenti</choice>
+                <choice>Detergente per la pulitura di tappeti</choice>
+                <choice>Detergente per pulire i vetri</choice>
+                <choice>Salviettine umide per la pulizia (p.es. Swiffer)</choice>
+            </choices>
+        </question>
+        <question qid="5" parentquestionID="1" valuecondition="Sì">
+            <qid>5</qid>
+            <questiondesc>Per quale parte della casa l'avete utilizzato?</questiondesc>
+            <typeid>2</typeid>
+            <choices>
+                <choice>Pavimento/i</choice>
+                <choice>Tappeto/i e moquette</choice>
+                <choice>Mobili e superfici</choice>
+                <choice>Stoviglie</choice>
+                <choice>Cucina</choice>
+                <choice>Fornelli</choice>
+                <choice>Gabinetto</choice>
+                <choice>Bagno</choice>
+                <choice>Finestre</choice>
+                <choice>Altro</choice>
+            </choices>
+        </question>
+        <question qid="6" parentquestionID="1" valuecondition="Sì">
+            <qid>6</qid>
+            <questiondesc>Indicare se la seguente affermazione rispetto al prodotto indicato è vera.</questiondesc>
+            <typeid>2</typeid>
+            <choices>
+                <choice>Mi lavo le mie mani dopo l'utilizzazione</choice>
+                <choice>Uso i guanti</choice>
+                <choice>Lo diluisco con dell'acqua, prima di usarlo</choice>
+                <choice>Non lo diluisco con dell'acqua, prima di usarlo</choice>
+                <choice>Nessuna delle precedenti affermazioni è vera</choice>
+            </choices>
+        </question>
+        <question qid="7" parentquestionID="1" valuecondition="Sì">
+            <qid>7</qid>
+            <questiondesc>Usa altri prodotti di pulizia?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="8" parentquestionID="7" valuecondition="Sì">
+            <qid>8</qid>
+            <questiondesc>Go to question 2</questiondesc>
+            <typeid>11</typeid>
+            <gobackto>2</gobackto>
+        </question>
+        <question qid="9" parentquestionID="1" valuecondition="Sì">
+            <qid>9</qid>
+            <questiondesc>Indichi quali parti della casa Lei stessa pulisce.</questiondesc>
+            <typeid>2</typeid>
+            <choices>
+                <choice>Pavimento/i</choice>
+                <choice>Tappeto/i e moquette</choice>
+                <choice>Mobili e superfici</choice>
+                <choice>Stoviglie</choice>
+                <choice>Fornelli</choice>
+                <choice>Cucina</choice>
+                <choice>Gabinetto</choice>
+                <choice>Bagno</choice>
+                <choice>Finestre</choice>
+                <choice>Nessuna</choice>
+            </choices>
+        </question>
+        <question qid="10" parentquestionID="9" valuecondition="Pavimento/i">
+            <qid>10</qid>
+            <questiondesc>In media, con che frequenza Lei pulisce il/i pavimento/i?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Una volta al mese</choice>
+                <choice>Due volte al mese</choice>
+                <choice>Una volta a settimana</choice>
+                <choice>4-5 volte a settimana</choice>
+                <choice>2-3 volte a settimana</choice>
+                <choice>Una volta al giorno</choice>
+                <choice>Più di una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="11" parentquestionID="9" valuecondition="Tappeto/i e moquette">
+            <qid>11</qid>
+            <questiondesc>In media, con che frequenza Lei pulisce il/i tappeto/i e/o la moquette?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Una volta al mese</choice>
+                <choice>Due volte al mese</choice>
+                <choice>Una volta a settimana</choice>
+                <choice>4-5 volte a settimana</choice>
+                <choice>2-3 volte a settimana</choice>
+                <choice>Una volta al giorno</choice>
+                <choice>Più di una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="12" parentquestionID="9" valuecondition="Mobili e superfici">
+            <qid>12</qid>
+            <questiondesc>In media, con che frequenza Lei pulisce i mobili e/o le superfici?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Una volta al mese</choice>
+                <choice>Due volte al mese</choice>
+                <choice>Una volta a settimana</choice>
+                <choice>4-5 volte a settimana</choice>
+                <choice>2-3 volte a settimana</choice>
+                <choice>Una volta al giorno</choice>
+                <choice>Più di una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="13" parentquestionID="9" valuecondition="Stoviglie">
+            <qid>13</qid>
+            <questiondesc>In media, con che frequenza Lei pulisce le stoviglie (p.es. piatti)?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Una volta al mese</choice>
+                <choice>Due volte al mese</choice>
+                <choice>Una volta a settimana</choice>
+                <choice>4-5 volte a settimana</choice>
+                <choice>2-3 volte a settimana</choice>
+                <choice>Una volta al giorno</choice>
+                <choice>Più di una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="14" parentquestionID="9" valuecondition="Cucina">
+            <qid>14</qid>
+            <questiondesc>In media, con che frequenza Lei pulisce la cucina</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Una volta al mese</choice>
+                <choice>Due volte al mese</choice>
+                <choice>Una volta a settimana</choice>
+                <choice>4-5 volte a settimana</choice>
+                <choice>2-3 volte a settimana</choice>
+                <choice>Una volta al giorno</choice>
+                <choice>Più di una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="15" parentquestionID="9" valuecondition="Fornelli">
+            <qid>15</qid>
+            <questiondesc>In media, con che frequenza Lei pulisce i fornelli della cucina?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Una volta al mese</choice>
+                <choice>Due volte al mese</choice>
+                <choice>Una volta a settimana</choice>
+                <choice>4-5 volte a settimana</choice>
+                <choice>2-3 volte a settimana</choice>
+                <choice>Una volta al giorno</choice>
+                <choice>Più di una volta al giorno</choice>
+            </choices>
+        </question>
+               <question qid="16" parentquestionID="9" valuecondition="Gabinetto">
+            <qid>16</qid>
+            <questiondesc>In media, con che frequenza Lei pulisce il gabinetto?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Una volta al mese</choice>
+                <choice>Due volte al mese</choice>
+                <choice>Una volta a settimana</choice>
+                <choice>4-5 volte a settimana</choice>
+                <choice>2-3 volte a settimana</choice>
+                <choice>Una volta al giorno</choice>
+                <choice>Più di una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="17" parentquestionID="9" valuecondition="Bagno">
+            <qid>17</qid>
+            <questiondesc>In media, con che frequenza Lei pulisce il bagno?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Una volta al mese</choice>
+                <choice>Due volte al mese</choice>
+                <choice>Una volta a settimana</choice>
+                <choice>4-5 volte a settimana</choice>
+                <choice>2-3 volte a settimana</choice>
+                <choice>Una volta al giorno</choice>
+                <choice>Più di una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="18" parentquestionID="9" valuecondition="Finestre">
+            <qid>18</qid>
+            <questiondesc>In media, con che frequenza Lei pulisce le finestre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Una volta al mese</choice>
+                <choice>Due volte al mese</choice>
+                <choice>Una volta a settimana</choice>
+                <choice>4-5 volte a settimana</choice>
+                <choice>2-3 volte a settimana</choice>
+                <choice>Una volta al giorno</choice>
+                <choice>Più di una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="19" parentquestionID="9" valuecondition="Pavimento/i">
+            <qid>19</qid>
+            <questiondesc>Quanto tempo impiega normalmente per pulire il pavimento</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Fino a 10 minuti</choice>
+                <choice>Fino a 30 minuti</choice>
+                <choice>Fino a 60 minuti</choice>
+                <choice>1 ora o oltre</choice>
+            </choices>
+        </question>
+        <question qid="20" parentquestionID="9" valuecondition="Tappeto/i e moquette">
+            <qid>20</qid>
+            <questiondesc>Quanto tempo impiega normalmente per pulire il/i tappeto/i e/o la moquette?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Fino a 10 minuti</choice>
+                <choice>Fino a 30 minuti</choice>
+                <choice>Fino a 60 minuti</choice>
+                <choice>1 ora o oltre</choice>
+            </choices>
+        </question>
+        <question qid="21" parentquestionID="9" valuecondition="Mobili e superfici">
+            <qid>21</qid>
+            <questiondesc>Quanto tempo impiega normalmente per pulire i mobili e/o le superfici?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Fino a 10 minuti</choice>
+                <choice>Fino a 30 minuti</choice>
+                <choice>Fino a 60 minuti</choice>
+                <choice>1 ora o oltre</choice>
+            </choices>
+        </question>
+        <question qid="22" parentquestionID="9" valuecondition="Stoviglie">
+            <qid>22</qid>
+            <questiondesc>Quanto tempo impiega normalmente per pulire le stoviglie (p.es. piatti)?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Fino a 10 minuti</choice>
+                <choice>Fino a 30 minuti</choice>
+                <choice>Fino a 60 minuti</choice>
+                <choice>1 ora o oltre</choice>
+            </choices>
+        </question>
+        <question qid="23" parentquestionID="9" valuecondition="Cucina">
+            <qid>23</qid>
+            <questiondesc>Quanto tempo impiega normalmente per pulire la cucina?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Fino a 10 minuti</choice>
+                <choice>Fino a 30 minuti</choice>
+                <choice>Fino a 60 minuti</choice>
+                <choice>1 ora o oltre</choice>
+            </choices>
+        </question>
+        <question qid="24" parentquestionID="9" valuecondition="Fornelli">
+            <qid>24</qid>
+            <questiondesc>Quanto tempo impiega normalmente per pulire i fornelli della cucina?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Fino a 10 minuti</choice>
+                <choice>Fino a 30 minuti</choice>
+                <choice>Fino a 60 minuti</choice>
+                <choice>1 ora o oltre</choice>
+            </choices>
+        </question>
+        <question qid="25" parentquestionID="9" valuecondition="Gabinetto">
+            <qid>25</qid>
+            <questiondesc>Quanto tempo impiega normalmente per pulire il gabinetto?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Fino a 10 minuti</choice>
+                <choice>Fino a 30 minuti</choice>
+                <choice>Fino a 60 minuti</choice>
+                <choice>1 ora o oltre</choice>
+            </choices>
+        </question>
+        <question qid="26" parentquestionID="9" valuecondition="Bagno">
+            <qid>26</qid>
+            <questiondesc>Quanto tempo impiega normalmente per pulire il bagno?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Fino a 10 minuti</choice>
+                <choice>Fino a 30 minuti</choice>
+                <choice>Fino a 60 minuti</choice>
+                <choice>1 ora o oltre</choice>
+            </choices>
+        </question>
+        <question qid="27" parentquestionID="9" valuecondition="Finestre">
+            <qid>27</qid>
+            <questiondesc>Quanto tempo impiega normalmente per pulire le finestre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Fino a 10 minuti</choice>
+                <choice>Fino a 30 minuti</choice>
+                <choice>Fino a 60 minuti</choice>
+                <choice>1 ora o oltre</choice>
+            </choices>
+        </question>
+        <question qid="28">
+            <qid>28</qid>
+            <questiondesc>Indichi quante volte si lava giornalmente le mani utilizzando il detergente liquido per i piatti.</questiondesc>
+            <typeid>3</typeid>
+            <min>0</min>
+            <max>20</max>
+        </question>
+        <question qid="29">
+            <qid>29</qid>
+            <questiondesc>Indichi quante volte si lava giornalmente le mani utilizzando il sapone liquido per le mani.</questiondesc>
+            <typeid>3</typeid>
+            <min>0</min>
+            <max>20</max>
+        </question>
+        <question qid="30">
+            <qid>30</qid>
+            <questiondesc>Indichi quante volte si lava giornalmente le mani utilizzando la saponetta (solida).</questiondesc>
+            <typeid>3</typeid>
+            <min>0</min>
+            <max>20</max>
+        </question>
+        <question qid="31">
+            <qid>31</qid>
+            <questiondesc>Indichi quante volte si lava giornalmente le mani utilizzando il disinfettante per le mani?</questiondesc>
+            <typeid>3</typeid>
+            <min>0</min>
+            <max>20</max>
+        </question>
+                <question qid="32">
+            <qid>32</qid>
+            <questiondesc>Mediamente, quanti secondi impiega per lavarsi le mani?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Fino a 3 secondi</choice>
+                <choice>Circa 5 secondi</choice>
+                <choice>10 secondi o più</choice>
+            </choices>
+        </question>
+        <!-- Laundry products -->
+        <question qid="33">
+            <qid>33</qid>
+            <questiondesc>Ha personalmente usato un prodotto per fare il bucato almeno una volta negli ultimi 3 mesi?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="34" parentquestionID="33" valuecondition="Sì">
+            <qid>34</qid>
+            <questiondesc>Negli ultimi tre mesi, ha lavato personalmente a mano dei vestiti?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="35" parentquestionID="34" valuecondition="Sì">
+            <qid>35</qid>
+            <questiondesc>Con quale frequenza lava a mano i vestiti?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Mai/Raramente</choice>
+                <choice>1-2 volte negli ultimi 3 mesi</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="36" parentquestionID="34" valuecondition="Sì">
+            <qid>36</qid>
+            <questiondesc>Normalmente, quanto minuti investe per lavare a mano i vestiti?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>2 minuti</choice>
+                <choice>5 minuti</choice>
+                <choice>7 minuti</choice>
+                <choice>10 minuti</choice>
+                <choice>15 minuti</choice>
+                <choice>20 minuti o più</choice>
+            </choices>
+        </question>
+        <question qid="37">
+            <qid>37</qid>
+            <questiondesc>Indipendentemente da chi fa il bucato, quali prodotti vengono utilizzati per lavare i suoi vestiti? </questiondesc>
+            <typeid>2</typeid>
+            <choices>
+                <choice>Candeggina</choice>
+                <choice>Detergente liquido per il bucato</choice>
+                <choice>Detergente in polvere per il bucato</choice>
+                <choice>Ammorbidente</choice>
+                <choice>Spray per la rimozione macchie</choice>
+                <choice>Liquido per la rimozione macchie</choice>
+            </choices>
+        </question>
+        <question qid="38">
+            <qid>38</qid>
+            <questiondesc>Indichi quali delle seguenti categorie di prodotti ha usato nell'ultimo anno.</questiondesc>
+            <typeid>2</typeid>
+            <choices>
+                <choice>Prodotti per la pulizia del forno</choice>
+                <choice>Cere per mobili</choice>
+                <choice>Prodotti per la cura delle scarpe</choice>
+                <choice>Colle</choice>
+                <choice>Pittura per pareti (per esterni e interni)</choice>
+                <choice>Pitture spray</choice>
+                <choice>Vernici</choice>
+                <choice>Colori/pitture per lavoretti manuali (e.g. acrilici, acquarelli)</choice>
+                <choice>Colori a dita</choice>
+                <choice>Prodotti antiruggine</choice>
+                <choice>Insetticidi</choice>
+                <choice>Prodotti per la rimozione di alghe</choice>
+                <choice>Prodotti per la rimozione di muffa o di funghi</choice>
+                <choice>Prodotti per la protezione del legno</choice>
+                <choice>Disinfettanti per la piscina</choice>
+                <choice>Prodotti per la cura dell'autovettura</choice>
+                <choice>Nessuno</choice>
+            </choices>
+        </question>
+        <question qid="39" parentquestionID="38" valuecondition="Prodotti per la pulizia del forno">
+            <qid>39</qid>
+            <questiondesc>Quanto spesso ha usato il/i prodotto/i per la pulizia del forno?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Molto raramente</choice>
+                <choice>Una volta all'anno</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="40" parentquestionID="38" valuecondition="Cere per mobili">
+            <qid>40</qid>
+            <questiondesc>Quanto spesso ha usato la/le cera/e per mobili?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Molto raramente</choice>
+                <choice>Una volta all'anno</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="41" parentquestionID="38" valuecondition="Prodotti per la cura delle scarpe">
+            <qid>41</qid>
+            <questiondesc>Quanto spesso ha usato il/i prodotto/i per la cura delle scarpe?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Molto raramente</choice>
+                <choice>Una volta all'anno</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="42" parentquestionID="38" valuecondition="Colle">
+            <qid>42</qid>
+            <questiondesc>Quanto spesso ha usato la/le colla/e?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Molto raramente</choice>
+                <choice>Una volta all'anno</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="43" parentquestionID="38" valuecondition="Pittura per pareti (per esterni e interni)">
+            <qid>43</qid>
+            <questiondesc>Quanto spesso ha usato la/le pittura/e per pareti (per esterno e/o interno)?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Molto raramente</choice>
+                <choice>Una volta all'anno</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="44" parentquestionID="38" valuecondition="Pittura per pareti (per esterni e interni)">
+            <qid>44</qid>
+            <questiondesc>Ha disposizione il/i prodotto/i?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="45" parentquestionID="44" valuecondition="Sì">
+            <qid>45</qid>
+            <questiondesc>Scansionare il codice barre presente sulla pittura per pareti che ha usato più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Pittura per pareti (per esterno e/o interno)"</choice>
+            </choices>
+        </question>
+        <question qid="46" parentquestionID="44" valuecondition="No">
+            <qid>46</qid>
+            <questiondesc>Indicare il nome della pittura per pareti che ha usato più frequentemente nell'utlimo anno.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="47" parentquestionID="38" valuecondition="Pitture spray">
+            <qid>47</qid>
+            <questiondesc>Quanto spesso ha usato la/le pittura/a spray?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Molto raramente</choice>
+                <choice>Una volta all'anno</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="48" parentquestionID="38" valuecondition="Vernici">
+            <qid>48</qid>
+            <questiondesc>Quanto spesso ha usato la/le vernice/i?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Molto raramente</choice>
+                <choice>Una volta all'anno</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="49" parentquestionID="38" valuecondition="Vernici">
+            <qid>49</qid>
+            <questiondesc>Ha disposizione il/i prodotto/i?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="50" parentquestionID="49" valuecondition="Sì">
+            <qid>50</qid>
+            <questiondesc>Scansionare il codice barre presente sulla vernice che ha usato più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Vernice</choice>
+            </choices>
+        </question>
+        <question qid="51" parentquestionID="49" valuecondition="No">
+            <qid>51</qid>
+            <questiondesc>Indicare il nome della vernice che ha usato più frequentemente.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="52" parentquestionID="38" valuecondition="Colori/pitture per lavoretti manuali (e.g. acrilici, acquarelli)">
+            <qid>52</qid>
+            <questiondesc>Quanto spesso ha usato i colori/pitture per lavoretti manuali (e.g. acrilici, acquarelli)?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Molto raramente</choice>
+                <choice>Una volta all'anno</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="53" parentquestionID="38" valuecondition="Colori a dita">
+            <qid>53</qid>
+            <questiondesc>Quanto spesso ha usato i colori a dita?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Molto raramente</choice>
+                <choice>Una volta all'anno</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="54" parentquestionID="38" valuecondition="Prodotti antiruggine">
+            <qid>54</qid>
+            <questiondesc>Quanto spesso ha usato il/i prodotto/i antiruggine?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Molto raramente</choice>
+                <choice>Una volta all'anno</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="55" parentquestionID="38" valuecondition="Insetticidi">
+            <qid>55</qid>
+            <questiondesc>Quanto spesso ha usato l'/gli insetticida/i?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Molto raramente</choice>
+                <choice>Una volta all'anno</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="56" parentquestionID="38" valuecondition="Prodotti per la rimozione di alghe">
+            <qid>56</qid>
+            <questiondesc>Quanto spesso ha usato il/i podotto/i per la rimozione di alghe?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Molto raramente</choice>
+                <choice>Una volta all'anno</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="57" parentquestionID="38" valuecondition="Prodotti per la rimozione di muffa o di funghi">
+            <qid>57</qid>
+            <questiondesc>Quanto spesso ha usato il/i prodotto/i per la rimozione di muffa o di funghi?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Molto raramente</choice>
+                <choice>Una volta all'anno</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="58" parentquestionID="38" valuecondition="Prodotti per la protezione del legno">
+            <qid>58</qid>
+            <questiondesc>Quanto spesso ha usato il/i prodotto/i per la protezione del legno?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Molto raramente</choice>
+                <choice>Una volta all'anno</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="59" parentquestionID="38" valuecondition="Disinfettanti per la piscina">
+            <qid>59</qid>
+            <questiondesc>Quanto spesso ha usato il/i disinfettante/i per la piscina?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Molto raramente</choice>
+                <choice>Una volta all'anno</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <question qid="60" parentquestionID="38" valuecondition="Prodotti per la cura dell'autovettura">
+            <qid>60</qid>
+            <questiondesc>Quanto spesso ha usato un prodotto per la cura dell'autovettura?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Molto raramente</choice>
+                <choice>Una volta all'anno</choice>
+                <choice>Ogni mese</choice>
+                <choice>2-3 volte al mese</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Una volta al giorno</choice>
+            </choices>
+        </question>
+        <!-- care products -->
+        <question qid="61">
+            <qid>61</qid>
+            <questiondesc>Indichi quali dei seguenti prodotti ha usato Lei stesso/a nell'ultimo anno.</questiondesc>
+            <typeid>2</typeid>
+            <choices>
+                <choice>Shampoo</choice>
+                <choice>Balsamo per capelli</choice>
+                <choice>Doccia schiuma</choice>
+                <choice>Bagno schiuma</choice>
+                <choice>Sapone liquido per le mani</choice>
+                <choice>Crema per il viso</choice>
+                <choice>Prodotti per pulizia del viso</choice>
+                <choice>Crema per il corpo</choice>
+                <choice>Crema per le mani</choice>
+                <choice>Salviettine umidificate (o per per bebé)</choice>
+                <choice>Schiuma, gel, olii o crema da barba o per la depilazione</choice>
+                <choice>Dentifricio</choice>
+                <choice>Tintura per capelli</choice>
+                <choice>Deodorante</choice>
+                <choice>Dopobarba</choice>
+                <choice>Profumo o eau de toilette</choice>
+            </choices>
+        </question>
+        <question qid="62" parentquestionID="61" valuecondition="Shampoo">
+            <qid>62</qid>
+            <questiondesc>Indichi per favore su quale parte del corpo applica lo shampoo.</questiondesc>
+            <typeid>2</typeid>
+            <imageURL/>
+            <choices>
+                <choice>Faccia, occhi, labbra</choice>
+                <choice>Testa</choice>
+                <choice>Collo</choice>
+                <choice>Schiena</choice>
+                <choice>Petto o seno</choice>
+                <choice>Addome</choice>
+                <choice>Mani</choice>
+                <choice>Braccia, polsi</choice>
+                <choice>Ascella</choice>
+                <choice>Parti intime</choice>
+                <choice>Gambe</choice>
+                <choice>Piedi</choice>
+            </choices>
+        </question>
+        <question qid="63" parentquestionID="61" valuecondition="Shampoo">
+            <qid>63</qid>
+            <questiondesc>Quante volte usa in media lo shampoo?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="64" parentquestionID="63" valuecondition="Ogni giorno">
+            <qid>64</qid>
+            <questiondesc>Quante volte usa in media lo shampoo al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="65" parentquestionID="63" valuecondition="Ogni settimana">
+            <qid>65</qid>
+            <questiondesc>Quante volte usa in media lo shampoo alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="66" parentquestionID="63" valuecondition="Alcune volte al mese">
+            <qid>66</qid>
+            <questiondesc>Quante volte usa in media lo shampoo al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="67" parentquestionID="63" valuecondition="Alcune volte all'anno">
+            <qid>67</qid>
+            <questiondesc>Quante volte usa in media lo shampoo all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="68" parentquestionID="61" valuecondition="Shampoo">
+            <qid>68</qid>
+            <questiondesc>Sullo shampoo è chiaramente visibile il codice a barre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="69" parentquestionID="68" valuecondition="Sì">
+            <qid>69</qid>
+            <questiondesc>Scansionare lo shampoo che utilizza più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Shampoo</choice>
+            </choices>
+        </question>
+        <question qid="70" parentquestionID="68" valuecondition="No">
+            <qid>70</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="71" parentquestionID="61" valuecondition="Shampoo">
+            <qid>71</qid>
+            <questiondesc>Scelga l'immagine che meglio rappresenta la quantità media di shampoo che usa personalmente.</questiondesc>
+            <typeid>12</typeid>
+            <choices>
+                <choice>http://129.132.42.250/~students/questionImages/soap1.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/soap2.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/soap3.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/soap4.png</choice>
+            </choices>
+        </question>
+        <question qid="72" parentquestionID="61" valuecondition="Shampoo">
+            <qid>72</qid>
+            <questiondesc>Quante volte nel corso di un singolo lavaggio applica su di sé la quantità di shampoo selezionata?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="73" parentquestionID="61" valuecondition="Balsamo per capelli">
+            <qid>73</qid>
+            <questiondesc>Indichi per favore su quale parte del corpo applica il balsamo per capelli.</questiondesc>
+            <typeid>2</typeid>
+            <imageURL/>
+            <choices>
+                <choice>Faccia, occhi, labbra</choice>
+                <choice>Testa</choice>
+                <choice>Collo</choice>
+                <choice>Schiena</choice>
+                <choice>Petto o seno</choice>
+                <choice>Addome</choice>
+                <choice>Mani</choice>
+                <choice>Braccia, polsi</choice>
+                <choice>Ascella</choice>
+                <choice>Parti intime</choice>
+                <choice>Gambe</choice>
+                <choice>Piedi</choice>
+            </choices>
+        </question>
+        <question qid="74" parentquestionID="61" valuecondition="Balsamo per capelli">
+            <qid>74</qid>
+            <questiondesc>Quante volte usa in media il balsamo per capelli?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="75" parentquestionID="74" valuecondition="Ogni giorno">
+            <qid>75</qid>
+            <questiondesc>Quante volte usa in media il balsamo per capelli al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="76" parentquestionID="74" valuecondition="Ogni settimana">
+            <qid>76</qid>
+            <questiondesc>Quante volte usa in media il balsamo per capelli alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="77" parentquestionID="74" valuecondition="Alcune volte al mese">
+            <qid>77</qid>
+            <questiondesc>Quante volte usa in media il balsamo per capelli al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="78" parentquestionID="74" valuecondition="Alcune volte all'anno">
+            <qid>78</qid>
+            <questiondesc>Quante volte usa in media il balsamo per capelli all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="79" parentquestionID="61" valuecondition="Balsamo per capelli">
+            <qid>79</qid>
+            <questiondesc>Sul balsamo per capelli è chiaramente visibile il codice a barre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="80" parentquestionID="79" valuecondition="Sì">
+            <qid>80</qid>
+            <questiondesc>Scansionare il balsamo per capelli che utilizza più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Balsamo per capelli</choice>
+            </choices>
+        </question>
+        <question qid="81" parentquestionID="79" valuecondition="No">
+            <qid>81</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="82" parentquestionID="61" valuecondition="Balsamo per capelli">
+            <qid>82</qid>
+            <questiondesc>Scelga l'immagine che meglio rappresenta la quantità media di balsamo per capelli che usa personalmente.</questiondesc>
+            <typeid>12</typeid>
+            <choices>
+                <choice>http://129.132.42.250/~students/questionImages/soap1.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/soap2.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/soap3.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/soap4.png</choice>
+            </choices>
+        </question>
+        <question qid="83" parentquestionID="61" valuecondition="Balsamo per capelli">
+            <qid>83</qid>
+            <questiondesc>Quante volte nel corso di un singolo lavaggio applica su di sé la quantità di balsamo selezionata?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="84" parentquestionID="61" valuecondition="Doccia schiuma">
+            <qid>84</qid>
+            <questiondesc>Indichi per favore su quale parte del corpo applica il doccia schiuma</questiondesc>
+            <typeid>2</typeid>
+            <imageURL/>
+            <choices>
+                <choice>Faccia, occhi, labbra</choice>
+                <choice>Testa</choice>
+                <choice>Collo</choice>
+                <choice>Schiena</choice>
+                <choice>Petto o seno</choice>
+                <choice>Addome</choice>
+                <choice>Mani</choice>
+                <choice>Braccia, polsi</choice>
+                <choice>Ascella</choice>
+                <choice>Parti intime</choice>
+                <choice>Gambe</choice>
+                <choice>Piedi</choice>
+            </choices>
+        </question>
+        <question qid="85" parentquestionID="61" valuecondition="Doccia schiuma">
+            <qid>85</qid>
+            <questiondesc>Quante volte usa in media il doccia schiuma?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="86" parentquestionID="85" valuecondition="Ogni giorno">
+            <qid>86</qid>
+            <questiondesc>Quante volte usa in media il doccia schiuma al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="87" parentquestionID="85" valuecondition="Ogni settimana">
+            <qid>87</qid>
+            <questiondesc>Quante volte usa in media il doccia schiuma alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="88" parentquestionID="85" valuecondition="Alcune volte al mese">
+            <qid>88</qid>
+            <questiondesc>Quante volte usa in media il doccia schiuma al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="89" parentquestionID="85" valuecondition="Alcune volte all'anno">
+            <qid>89</qid>
+            <questiondesc>Quante volte usa in media il doccia schiuma all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="90" parentquestionID="61" valuecondition="Doccia schiuma">
+            <qid>90</qid>
+            <questiondesc>Sul doccia schiuma è chiaramente visibile il codice a barre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="91" parentquestionID="90" valuecondition="Sì">
+            <qid>91</qid>
+            <questiondesc>Scansionare il doccia schiuma che utilizza più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Doccia schiuma</choice>
+            </choices>
+        </question>
+        <question qid="92" parentquestionID="90" valuecondition="No">
+            <qid>92</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="93" parentquestionID="61" valuecondition="Doccia schiuma">
+            <qid>93</qid>
+            <questiondesc>Scelga l'immagine che meglio rappresenta la quantità media di doccia schiuma che usa personalmente.</questiondesc>
+            <typeid>12</typeid>
+            <choices>
+                <choice>http://129.132.42.250/~students/questionImages/soap1.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/soap2.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/soap3.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/soap4.png</choice>
+            </choices>
+        </question>
+        <question qid="94" parentquestionID="61" valuecondition="Doccia schiuma">
+            <qid>94</qid>
+            <questiondesc>Quante volte nel corso di un singolo lavaggio applica su di sé la quantità di doccischiuma selezionata</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="95" parentquestionID="61" valuecondition="Bagno schiuma">
+            <qid>95</qid>
+            <questiondesc>Indichi per favore su quale parte del corpo applica il bagno schiuma.</questiondesc>
+            <typeid>2</typeid>
+            <imageURL/>
+            <choices>
+                <choice>Faccia, occhi, labbra</choice>
+                <choice>Testa</choice>
+                <choice>Collo</choice>
+                <choice>Schiena</choice>
+                <choice>Petto o seno</choice>
+                <choice>Addome</choice>
+                <choice>Mani</choice>
+                <choice>Braccia, polsi</choice>
+                <choice>Ascella</choice>
+                <choice>Parti intime</choice>
+                <choice>Gambe</choice>
+                <choice>Piedi</choice>
+            </choices>
+        </question>
+        <question qid="96" parentquestionID="61" valuecondition="Bagno schiuma">
+            <qid>96</qid>
+            <questiondesc>Quante volte usa in media il bagno schiuma?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="97" parentquestionID="96" valuecondition="Ogni giorno">
+            <qid>97</qid>
+            <questiondesc>Quante volte usa in media il bagno schiuma al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="98" parentquestionID="96" valuecondition="Ogni settimana">
+            <qid>98</qid>
+            <questiondesc>Quante volte usa in media il bagno schiuma alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="99" parentquestionID="96" valuecondition="Alcune volte al mese">
+            <qid>99</qid>
+            <questiondesc>Quante volte usa in media il bagno schiuma al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="100" parentquestionID="96" valuecondition="Alcune volte all'anno">
+            <qid>100</qid>
+            <questiondesc>Quante volte usa in media il bagno schiuma all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="101" parentquestionID="61" valuecondition="Bagno schiuma">
+            <qid>101</qid>
+            <questiondesc>Sul bagno schiuma è chiaramente visibile il codice a barre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="102" parentquestionID="101" valuecondition="Sì">
+            <qid>102</qid>
+            <questiondesc>Scansionare il bagno schiuma che utilizza più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Bagno schiuma</choice>
+            </choices>
+        </question>
+        <question qid="103" parentquestionID="101" valuecondition="No">
+            <qid>103</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="104" parentquestionID="61" valuecondition="Bagno schiuma">
+            <qid>104</qid>
+            <questiondesc>Scelga l'immagine che meglio rappresenta la quantità media di bagno schiuma che usa personalmente.</questiondesc>
+            <typeid>12</typeid>
+            <choices>
+                <choice>http://129.132.42.250/~students/questionImages/soap1.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/soap2.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/soap3.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/soap4.png</choice>
+            </choices>
+        </question>
+        <question qid="105" parentquestionID="61" valuecondition="Bagno schiuma">
+            <qid>94</qid>
+            <questiondesc>Quante volte nel corso di un singolo lavaggio applica su di sé la quantità di bagnoschiuma selezionata?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="106" parentquestionID="61" valuecondition="Sapone liquido per le mani">
+            <qid>106</qid>
+            <questiondesc>Indichi per favore su quale parte del corpo applica il sapone liquido per le mani.</questiondesc>
+            <typeid>2</typeid>
+            <imageURL/>
+            <choices>
+                <choice>Faccia, occhi, labbra</choice>
+                <choice>Testa</choice>
+                <choice>Collo</choice>
+                <choice>Schiena</choice>
+                <choice>Petto o seno</choice>
+                <choice>Addome</choice>
+                <choice>Mani</choice>
+                <choice>Braccia, polsi</choice>
+                <choice>Ascella</choice>
+                <choice>Parti intime</choice>
+                <choice>Gambe</choice>
+                <choice>Piedi</choice>
+            </choices>
+        </question>
+        <question qid="107" parentquestionID="61" valuecondition="Sapone liquido per le mani">
+            <qid>107</qid>
+            <questiondesc>Quante volte usa in media il sapone liquido per le mani?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="108" parentquestionID="107" valuecondition="Ogni giorno">
+            <qid>108</qid>
+            <questiondesc>Quante volte usa in media il sapone liquido per le mani al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="109" parentquestionID="107" valuecondition="Ogni settimana">
+            <qid>109</qid>
+            <questiondesc>Quante volte usa in media il sapone liquido per le mani alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="110" parentquestionID="107" valuecondition="Alcune volte al mese">
+            <qid>110</qid>
+            <questiondesc>Quante volte usa in media il sapone liquido per le mani al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="111" parentquestionID="107" valuecondition="Alcune volte all'anno">
+            <qid>111</qid>
+            <questiondesc>Quante volte usa in media il sapone liquido per le mani all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="112" parentquestionID="61" valuecondition="Sapone liquido per le mani">
+            <qid>111</qid>
+            <questiondesc>Sul sapone liquido per le mani è chiaramente visibile il codice a barre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="113" parentquestionID="112" valuecondition="Sì">
+            <qid>113</qid>
+            <questiondesc>Scansionare il sapone liquido per le mani che utilizza più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Sapone liquido per le mani</choice>
+            </choices>
+        </question>
+        <question qid="114" parentquestionID="112" valuecondition="No">
+            <qid>114</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="115" parentquestionID="61" valuecondition="Sapone liquido per le mani">
+            <qid>115</qid>
+            <questiondesc>Scelga l'immagine che meglio rappresenta la quantità media di sapone liquido per le mani che usa personalmente.</questiondesc>
+            <typeid>12</typeid>
+            <choices>
+                <choice>http://129.132.42.250/~students/questionImages/soap1.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/soap2.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/soap3.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/soap4.png</choice>
+            </choices>
+        </question>
+        <question qid="116" parentquestionID="61" valuecondition="Crema per il viso">
+            <qid>116</qid>
+            <questiondesc>Quante volte usa in media la crema per il viso?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="117" parentquestionID="116" valuecondition="Ogni giorno">
+            <qid>117</qid>
+            <questiondesc>Quante volte usa in media la crema per il viso al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="118" parentquestionID="116" valuecondition="Ogni settimana">
+            <qid>118</qid>
+            <questiondesc>Quante volte usa in media la crema per il viso alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="119" parentquestionID="116" valuecondition="Alcune volte al mese">
+            <qid>119</qid>
+            <questiondesc>Quante volte usa in media la crema per il viso al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="120" parentquestionID="116" valuecondition="Alcune volte all'anno">
+            <qid>120</qid>
+            <questiondesc>Quante volte usa in media la crema per il viso all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="121" parentquestionID="61" valuecondition="Crema per il viso  ">
+            <qid>121</qid>
+            <questiondesc>Sulla crema per il viso è chiaramente visibile il codice a barre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="122" parentquestionID="121" valuecondition="Sì">
+            <qid>122</qid>
+            <questiondesc>Scansionare la crema per il viso che utilizza più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Crema per il viso</choice>
+            </choices>
+        </question>
+        <question qid="123" parentquestionID="121" valuecondition="No">
+            <qid>123</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="124" parentquestionID="61" valuecondition="Crema per il viso">
+            <qid>124</qid>
+            <questiondesc>Scelga l'immagine che meglio rappresenta la quantità media la crema per il viso che usa personalmente.</questiondesc>
+            <typeid>12</typeid>
+            <choices>
+                <choice>http://129.132.42.250/~students/questionImages/small1.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/small2.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/small3.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/small4.png</choice>
+            </choices>
+        </question>
+        <question qid="125" parentquestionID="61" valuecondition="Prodotti per pulizia del viso">
+            <qid>125</qid>
+            <questiondesc>Quante volte usa in media dei prodotti per la pulizia del viso?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="126" parentquestionID="125" valuecondition="Ogni giorno">
+            <qid>126</qid>
+            <questiondesc>Quante volte usa in media dei prodotti per la pulizia del viso al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="127" parentquestionID="125" valuecondition="Ogni settimana">
+            <qid>127</qid>
+            <questiondesc>Quante volte usa in media dei prodotti per la pulizia del viso alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="128" parentquestionID="125" valuecondition="Alcune volte al mese">
+            <qid>128</qid>
+            <questiondesc>Quante volte usa in media dei prodotti per la pulizia del viso al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="129" parentquestionID="125" valuecondition="Alcune volte all'anno">
+            <qid>129</qid>
+            <questiondesc>Quante volte usa in media dei prodotti per la pulizia del viso all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="130" parentquestionID="61" valuecondition="Prodotti per pulizia del viso">
+            <qid>130</qid>
+            <questiondesc>Sul prodotto per pulizia del viso che usa più frequentemente è chiaramente visibile il codice a barre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="131" parentquestionID="130" valuecondition="Sì">
+            <qid>131</qid>
+            <questiondesc>Scansionare il prodotto per la pulizia del viso che utilizza più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Prodotto per la pulizia del viso.</choice>
+            </choices>
+        </question>
+        <question qid="132" parentquestionID="130" valuecondition="No">
+            <qid>132</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="133" parentquestionID="61" valuecondition="Prodotti per pulizia del viso">
+            <qid>133</qid>
+            <questiondesc>Scelga l'immagine che meglio rappresenta la quantità media di prodotto per la pulizia del viso che usa personalmente.</questiondesc>
+            <typeid>12</typeid>
+            <choices>
+                <choice>http://129.132.42.250/~students/questionImages/small1.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/small2.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/small3.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/small4.png</choice>
+            </choices>
+        </question>
+        <question qid="134" parentquestionID="61" valuecondition="Crema per il corpo">
+            <qid>134</qid>
+            <questiondesc>Indichi per favore su quale parte del corpo applica la crema per il corpo</questiondesc>
+            <typeid>2</typeid>
+            <imageURL/>
+            <choices>
+                <choice>Faccia, occhi, labbra</choice>
+                <choice>Testa</choice>
+                <choice>Collo</choice>
+                <choice>Schiena</choice>
+                <choice>Petto o seno</choice>
+                <choice>Addome</choice>
+                <choice>Mani</choice>
+                <choice>Braccia, polsi</choice>
+                <choice>Ascella</choice>
+                <choice>Parti intime</choice>
+                <choice>Gambe</choice>
+                <choice>Piedi</choice>
+            </choices>
+        </question>
+        <question qid="135" parentquestionID="61" valuecondition="Crema per il corpo">
+            <qid>135</qid>
+            <questiondesc>Quante volte usa in media la crema per il corpo?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="136" parentquestionID="135" valuecondition="Ogni giorno">
+            <qid>136</qid>
+            <questiondesc>Quante volte usa in media la crema per il corpo al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="137" parentquestionID="135" valuecondition="Ogni settimana">
+            <qid>137</qid>
+            <questiondesc>Quante volte usa in media la crema per il corpo alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="138" parentquestionID="135" valuecondition="Alcune volte al mese">
+            <qid>138</qid>
+            <questiondesc>Quante volte usa in media la crema per il corpo al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="139" parentquestionID="135" valuecondition="Alcune volte all'anno">
+            <qid>139</qid>
+            <questiondesc>Quante volte usa in media la crema per il corpo all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="140" parentquestionID="61" valuecondition="Crema per il corpo">
+            <qid>140</qid>
+            <questiondesc>Sulla crema per il corpo è chiaramente visibile il codice a barre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="141" parentquestionID="140" valuecondition="Sì">
+            <qid>141</qid>
+            <questiondesc>Scansionare la crema per il corpo che utilizza più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Crema per il corpo</choice>
+            </choices>
+        </question>
+        <question qid="142" parentquestionID="140" valuecondition="No">
+            <qid>142</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="143" parentquestionID="61" valuecondition="Crema per il corpo">
+            <qid>143</qid>
+            <questiondesc>Scelga l'immagine che meglio rappresenta la quantità media di crema per il corpo che usa personalmente.</questiondesc>
+            <typeid>12</typeid>
+            <choices>
+                <choice>http://129.132.42.250/~students/questionImages/cream1.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/cream2.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/cream3.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/cream4.png</choice>
+            </choices>
+        </question>
+        <question qid="144" parentquestionID="61" valuecondition="Crema per il corpo">
+            <qid>144</qid>
+            <questiondesc>Quante volte nel corso di un singolo episodio Lei si applica su di sé quantità di crema per il corpo scelta?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="145" parentquestionID="61" valuecondition="Crema per le mani">
+            <qid>145</qid>
+            <questiondesc>Indichi per favore su quale parte del corpo applica la crema per le mani</questiondesc>
+            <typeid>2</typeid>
+            <imageURL/>
+            <choices>
+                <choice>Faccia, occhi, labbra</choice>
+                <choice>Testa</choice>
+                <choice>Collo</choice>
+                <choice>Schiena</choice>
+                <choice>Petto o seno</choice>
+                <choice>Addome</choice>
+                <choice>Mani</choice>
+                <choice>Braccia, polsi</choice>
+                <choice>Ascella</choice>
+                <choice>Parti intime</choice>
+                <choice>Gambe</choice>
+                <choice>Piedi</choice>
+            </choices>
+        </question>
+        <question qid="146" parentquestionID="61" valuecondition="Crema per le mani">
+            <qid>146</qid>
+            <questiondesc>Quante volte usa in media la crema per le mani?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="147" parentquestionID="146" valuecondition="Ogni giorno">
+            <qid>147</qid>
+            <questiondesc>Quante volte usa in media la crema per le mani al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="148" parentquestionID="146" valuecondition="Ogni settimana">
+            <qid>148</qid>
+            <questiondesc>Quante volte usa in media la crema per le mani alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="149" parentquestionID="146" valuecondition="Alcune volte al mese">
+            <qid>149</qid>
+            <questiondesc>Quante volte usa in media la crema per le mani al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="150" parentquestionID="146" valuecondition="Alcune volte all'anno">
+            <qid>150</qid>
+            <questiondesc>Quante volte usa in media la crema per le mani all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="151" parentquestionID="61" valuecondition="Crema per le mani">
+            <qid>151</qid>
+            <questiondesc>Sulla crema per le mani è chiaramente visibile il codice a barre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="152" parentquestionID="151" valuecondition="Sì">
+            <qid>152</qid>
+            <questiondesc>Scansionare la crema per le mani che utilizza più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Crema per le mani</choice>
+            </choices>
+        </question>
+        <question qid="153" parentquestionID="151" valuecondition="No">
+            <qid>153</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="154" parentquestionID="61" valuecondition="Crema per le mani">
+            <qid>154</qid>
+            <questiondesc>Scelga l'immagine che meglio rappresenta la quantità media di crema per le mani che usa personalmente.</questiondesc>
+            <typeid>12</typeid>
+            <choices>
+                <choice>http://129.132.42.250/~students/questionImages/cream1.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/cream2.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/cream3.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/cream4.png</choice>
+            </choices>
+        </question>
+        <question qid="155" parentquestionID="61" valuecondition="Crema per le mani">
+            <qid>155</qid>
+            <questiondesc>Quante volte nel corso di un singolo episodio Lei si applica su di sé (p. es. le due mani) la quantità di crema per le mani scelta</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="156" parentquestionID="61" valuecondition="Salviettine umidificate (o per per bebé)">
+            <qid>156</qid>
+            <questiondesc>Indichi per favore su quale parte del corpo utilizza le salviettine umidificate (o per per bebé).</questiondesc>
+            <typeid>2</typeid>
+            <imageURL/>
+            <choices>
+                <choice>Faccia, occhi, labbra</choice>
+                <choice>Testa</choice>
+                <choice>Collo</choice>
+                <choice>Schiena</choice>
+                <choice>Petto o seno</choice>
+                <choice>Addome</choice>
+                <choice>Mani</choice>
+                <choice>Braccia, polsi</choice>
+                <choice>Ascella</choice>
+                <choice>Parti intime</choice>
+                <choice>Gambe</choice>
+                <choice>Piedi</choice>
+            </choices>
+        </question>
+        <question qid="157" parentquestionID="61" valuecondition="Salviettine umidificate (o per per bebé)">
+            <qid>157</qid>
+            <questiondesc>Quante volte usa in media le salviettine umidificate (o per per bebé)?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="158" parentquestionID="157" valuecondition="Ogni giorno">
+            <qid>158</qid>
+            <questiondesc>Quante volte usa in media le salviettine umidificate (o per per bebé) al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="159" parentquestionID="157" valuecondition="Ogni settimana">
+            <qid>159</qid>
+            <questiondesc>Quante volte usa in media le salviettine umidificate (o per per bebé) alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="160" parentquestionID="157" valuecondition="Alcune volte al mese">
+            <qid>160</qid>
+            <questiondesc>Quante volte usa in media le salviettine umidificate (o per per bebé) al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="161" parentquestionID="157" valuecondition="Alcune volte all'anno">
+            <qid>161</qid>
+            <questiondesc>Quante volte usa in media le salviettine umidificate (o per per bebé) all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="162" parentquestionID="61" valuecondition="Salviettine umidificate (o per per bebé)">
+            <qid>162</qid>
+            <questiondesc>Sulle salviettine umidificate (o per per bebé) è chiaramente visibile il codice a barre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="163" parentquestionID="162" valuecondition="Sì">
+            <qid>163</qid>
+            <questiondesc>Scansionare le salviettine umidificate (o per per bebé) che utilizza più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Salviettine umidificate (o per per bebé)</choice>
+            </choices>
+        </question>
+        <question qid="164" parentquestionID="162" valuecondition="No">
+            <qid>164</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="165" parentquestionID="61" valuecondition="Salviettine umidificate (o per per bebé)">
+            <qid>165</qid>
+            <questiondesc>Quante salviettine umide, o salviettine per bebè, utilizza mediamente per volta (per evento)?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>1</choice>
+                <choice>2</choice>
+                <choice>3</choice>
+                <choice>4 o più</choice>
+            </choices>
+        </question>
+        <question qid="166" parentquestionID="61" valuecondition="Schiuma, gel, olii o crema da barba o per la depilazione">
+            <qid>166</qid>
+            <questiondesc>Indichi per favore su quale parte del corpo utilizza prodotti per la depilazione.</questiondesc>
+            <typeid>2</typeid>
+            <imageURL/>
+            <choices>
+                <choice>Faccia, occhi, labbra</choice>
+                <choice>Testa</choice>
+                <choice>Collo</choice>
+                <choice>Schiena</choice>
+                <choice>Petto o seno</choice>
+                <choice>Addome</choice>
+                <choice>Mani</choice>
+                <choice>Braccia, polsi</choice>
+                <choice>Ascella</choice>
+                <choice>Parti intime</choice>
+                <choice>Gambe</choice>
+                <choice>Piedi</choice>
+            </choices>
+        </question>
+        <question qid="167" parentquestionID="61" valuecondition="Schiuma, gel, olii o crema da barba o per la depilazione">
+            <qid>167</qid>
+            <questiondesc>Quante volte usa in media i prodotti per la depilazione?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="168" parentquestionID="167" valuecondition="Ogni giorno">
+            <qid>168</qid>
+            <questiondesc>Quante volte usa in media i prodotti per la depilazione al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="169" parentquestionID="167" valuecondition="Ogni settimana">
+            <qid>169</qid>
+            <questiondesc>Quante volte usa in media i prodotti per la depilazione alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="170" parentquestionID="167" valuecondition="Alcune volte al mese">
+            <qid>170</qid>
+            <questiondesc>Quante volte usa in media i prodotti per la depilazione al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="171" parentquestionID="167" valuecondition="Alcune volte all'anno">
+            <qid>171</qid>
+            <questiondesc>Quante volte usa in media i prodotti per la depilazione all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="172" parentquestionID="61" valuecondition="Schiuma, gel, olii o crema da barba o per la depilazione">
+            <qid>172</qid>
+            <questiondesc>Sul prodotto di depilazione è chiaramente visibile il codice a barre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="173" parentquestionID="172" valuecondition="Sì">
+            <qid>173</qid>
+            <questiondesc>Scansionare il prodotto di depilazione che utilizza più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Prodotto di depilazione</choice>
+            </choices>
+        </question>
+        <question qid="174" parentquestionID="172" valuecondition="No">
+            <qid>174</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="175" parentquestionID="61" valuecondition="Dentifricio">
+            <qid>175</qid>
+            <questiondesc>Quante volte usa in media il dentifricio?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="176" parentquestionID="175" valuecondition="Ogni giorno">
+            <qid>176</qid>
+            <questiondesc>Quante volte usa in media il dentifricio al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="177" parentquestionID="175" valuecondition="Ogni settimana">
+            <qid>177</qid>
+            <questiondesc>Quante volte usa in media il dentifricio alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="178" parentquestionID="175" valuecondition="Alcune volte al mese">
+            <qid>178</qid>
+            <questiondesc>Quante volte usa in media il dentifricio al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="179" parentquestionID="175" valuecondition="Alcune volte all'anno">
+            <qid>179</qid>
+            <questiondesc>Quante volte usa in media il dentifricio all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="180" parentquestionID="61" valuecondition="Dentifricio">
+            <qid>180</qid>
+            <questiondesc>Sul dentifricio è chiaramente visibile il codice a barre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="181" parentquestionID="180" valuecondition="Sì">
+            <qid>181</qid>
+            <questiondesc>Scansionare il dentifricio che utilizza più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Dentifricio</choice>
+            </choices>
+        </question>
+        <question qid="182" parentquestionID="180" valuecondition="No">
+            <qid>182</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="183" parentquestionID="61" valuecondition="Dentifricio">
+            <qid>183</qid>
+            <questiondesc>Scelga l'immagine che meglio rappresenta la quantità media di dentifricio che usa personalmente.</questiondesc>
+            <typeid>12</typeid>
+            <choices>
+                <choice>http://129.132.42.250/~students/questionImages/toothpaste1.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/toothpaste2.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/toothpaste3.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/toothpaste4.png</choice>
+            </choices>
+        </question>
+        <question qid="184" parentquestionID="61" valuecondition="Tintura per capelli">
+            <qid>184</qid>
+            <questiondesc>Quante volte usa in media la tintura per capelli?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="185" parentquestionID="184" valuecondition="Ogni giorno">
+            <qid>185</qid>
+            <questiondesc>Quante volte usa in media la tintura per capelli al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="186" parentquestionID="184" valuecondition="Ogni settimana">
+            <qid>186</qid>
+            <questiondesc>Quante volte usa in media la tintura per capelli alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="187" parentquestionID="184" valuecondition="Alcune volte al mese">
+            <qid>187</qid>
+            <questiondesc>Quante volte usa in media la tintura per capelli al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="188" parentquestionID="184" valuecondition="Alcune volte all'anno">
+            <qid>188</qid>
+            <questiondesc>Quante volte usa in media la tintura per capelli all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="189" parentquestionID="61" valuecondition="Tintura per capelli">
+            <qid>189</qid>
+            <questiondesc>Chi applica la tintura per capelli?</questiondesc>
+            <choice>Io stesso</choice>
+            <choice>Altre persone</choice>
+        </question>
+        <question qid="190" parentquestionID="61" valuecondition="Deodorante">
+            <qid>190</qid>
+            <questiondesc>Quante volte usa in media il deodorante?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="191" parentquestionID="190" valuecondition="Ogni giorno">
+            <qid>191</qid>
+            <questiondesc>Quante volte usa in media il deodorante al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>1</typeid>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="192" parentquestionID="190" valuecondition="Ogni settimana">
+            <qid>192</qid>
+            <questiondesc>Quante volte usa in media il deodorante alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="193" parentquestionID="190" valuecondition="Alcune volte al mese">
+            <qid>193</qid>
+            <questiondesc>Quante volte usa in media il deodorante al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="194" parentquestionID="190" valuecondition="Alcune volte all'anno">
+            <qid>194</qid>
+            <questiondesc>Quante volte usa in media il deodorante all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="195" parentquestionID="61" valuecondition="Deodorante">
+            <qid>195</qid>
+            <questiondesc>Sul deodorante è chiaramente visibile il codice a barre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="196" parentquestionID="195" valuecondition="Sì">
+            <qid>196</qid>
+            <questiondesc>Scansionare il deodorante che utilizza più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+            <choice>Deodorante</choice>
+            </choices>
+        </question>
+        <question qid="197" parentquestionID="195" valuecondition="No">
+            <qid>197</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+            <question qid="198" parentquestionID="61" valuecondition="Dopobarba">
+            <qid>198</qid>
+            <questiondesc>Quante volte usa in media il dopobarba?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="199" parentquestionID="198" valuecondition="Ogni giorno">
+            <qid>199</qid>
+            <questiondesc>Quante volte usa in media il dopobarba al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="200" parentquestionID="198" valuecondition="Ogni settimana">
+            <qid>200</qid>
+            <questiondesc>Quante volte usa in media il dopobarba alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="201" parentquestionID="198" valuecondition="Alcune volte al mese">
+            <qid>201</qid>
+            <questiondesc>Quante volte usa in media il dopobarba al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="202" parentquestionID="198" valuecondition="Alcune volte all'anno">
+            <qid>202</qid>
+            <questiondesc>Quante volte usa in media il dopobarba all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="203" parentquestionID="61" valuecondition="Dopobarba">
+            <qid>203</qid>
+            <questiondesc>Sul dopobarba è chiaramente visibile il codice a barre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="204" parentquestionID="203" valuecondition="Sì">
+            <qid>204</qid>
+            <questiondesc>Scansionare il dopobarba che utilizza più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Dopobarba</choice>
+            </choices>
+        </question>
+        <question qid="205" parentquestionID="203" valuecondition="No">
+            <qid>205</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="206" parentquestionID="61" valuecondition="Profumo o eau de toilette">
+            <qid>206</qid>
+            <questiondesc>Quante volte usa in media il profumo o eau de toilette?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="207" parentquestionID="206" valuecondition="Ogni giorno">
+            <qid>207</qid>
+            <questiondesc>Quante volte usa in media il profumo o eau de toilette al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="208" parentquestionID="206" valuecondition="Ogni settimana">
+            <qid>208</qid>
+            <questiondesc>Quante volte usa in media il profumo o eau de toilette alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="209" parentquestionID="206" valuecondition="Alcune volte al mese">
+            <qid>209</qid>
+            <questiondesc>Quante volte usa in media il profumo o eau de toilette al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="210" parentquestionID="206" valuecondition="Alcune volte all'anno">
+            <qid>210</qid>
+            <questiondesc>Quante volte usa in media il profumo o eau de toilette all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="211">
+            <qid>211</qid>
+            <questiondesc>Nell'ultimo anno ha usato almeno un prodotto per il make-up?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="212" parentquestionID="211" valuecondition="Sì">
+            <qid>212</qid>
+            <questiondesc>Indichi quali dei seguenti prodotti per make-up ha usato nell'ultimo anno?</questiondesc>
+            <typeid>2</typeid>
+            <choices>
+                <choice>Rossetto, burro di cacao e/o lucidalabbra</choice>
+                <choice>Ombretto</choice>
+                <choice>Smalto per unghie</choice>
+                <choice>Cipria e/o fard</choice>
+                <choice>Struccante</choice>
+                <choice>Fondotinta o crema coprente</choice>
+                <choice>Nessuno</choice>
+            </choices>
+        </question>
+        <question qid="213" parentquestionID="212" valuecondition="Rossetto, burro di cacao e/o lucidalabbra">
+            <qid>213</qid>
+            <questiondesc>Quante volte usa in media il rossetto, burro di cacao e/o lucidalabbra?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="214" parentquestionID="213" valuecondition="Ogni giorno">
+            <qid>214</qid>
+            <questiondesc>Quante volte usa in media il rossetto, burro di cacao e/o lucidalabbra al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="215" parentquestionID="213" valuecondition="Ogni settimana">
+            <qid>215</qid>
+            <questiondesc>Quante volte usa in media il rossetto, burro di cacao e/o lucidalabbra alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="216" parentquestionID="213" valuecondition="Alcune volte al mese">
+            <qid>216</qid>
+            <questiondesc>Quante volte usa in media il rossetto, burro di cacao e/o lucidalabbra al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="217" parentquestionID="213" valuecondition="Alcune volte all'anno">
+            <qid>217</qid>
+            <questiondesc>Quante volte usa in media il rossetto, burro di cacao e/o lucidalabbra all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="218" parentquestionID="212" valuecondition="Ombretto">
+            <qid>218</qid>
+            <questiondesc>Quante volte usa in media l'ombretto?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="219" parentquestionID="218" valuecondition="Ogni giorno">
+            <qid>219</qid>
+            <questiondesc>Quante volte usa in media l'ombretto al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="220" parentquestionID="218" valuecondition="Ogni settimana">
+            <qid>220</qid>
+            <questiondesc>Quante volte usa in media l'ombretto alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="221" parentquestionID="218" valuecondition="Alcune volte al mese">
+            <qid>221</qid>
+            <questiondesc>Quante volte usa in media l'ombretto al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="222" parentquestionID="218" valuecondition="Alcune volte all'anno">
+            <qid>222</qid>
+            <questiondesc>Quante volte usa in media l'ombretto all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="223" parentquestionID="212" valuecondition="Smalto per unghie">
+            <qid>223</qid>
+            <questiondesc>Quante volte usa in media lo smalto per unghie?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="224" parentquestionID="223" valuecondition="Ogni giorno">
+            <qid>224</qid>
+            <questiondesc>Quante volte usa in media lo smalto per unghie al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="225" parentquestionID="223" valuecondition="Ogni settimana">
+            <qid>225</qid>
+            <questiondesc>Quante volte usa in media lo smalto per unghie alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="226" parentquestionID="223" valuecondition="Alcune volte al mese">
+            <qid>226</qid>
+            <questiondesc>Quante volte usa in media lo smalto per unghie al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="227" parentquestionID="223" valuecondition="Alcune volte all'anno">
+            <qid>227</qid>
+            <questiondesc>Quante volte usa in media lo smalto per unghie all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="228" parentquestionID="212" valuecondition="Cipria e/o fard">
+            <qid>228</qid>
+            <questiondesc>Quante volte usa in media la cipria e/o il fard?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="229" parentquestionID="228" valuecondition="Ogni giorno">
+            <qid>229</qid>
+            <questiondesc>Quante volte usa in media la cipria e/o il fard?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="230" parentquestionID="228" valuecondition="Ogni settimana">
+            <qid>230</qid>
+            <questiondesc>Quante volte usa in media la cipria e/o il fard alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="231" parentquestionID="228" valuecondition="Alcune volte al mese">
+            <qid>231</qid>
+            <questiondesc>Quante volte usa in media la cipria e/o il fard al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="232" parentquestionID="228" valuecondition="Alcune volte all'anno">
+            <qid>232</qid>
+            <questiondesc>Quante volte usa in media la cipria e/o il fard all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="233" parentquestionID="212" valuecondition="Struccante">
+            <qid>233</qid>
+            <questiondesc>Quante volte usa in media lo struccante?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="234" parentquestionID="233" valuecondition="Ogni giorno">
+            <qid>234</qid>
+            <questiondesc>Quante volte usa in media lo struccante per il viso al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="235" parentquestionID="233" valuecondition="Ogni settimana">
+            <qid>235</qid>
+            <questiondesc>Quante volte usa in media lo struccante alla settimana?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="236" parentquestionID="233" valuecondition="Alcune volte al mese">
+            <qid>236</qid>
+            <questiondesc>Quante volte usa in media lo struccante al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="237" parentquestionID="233" valuecondition="Alcune volte all'anno">
+            <qid>237</qid>
+            <questiondesc>Quante volte usa in media lo struccante all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="238" parentquestionID="212" valuecondition="Struccante">
+            <qid>238</qid>
+            <questiondesc>Sullo struccante è chiaramente visibile il codice a barre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="239" parentquestionID="238" valuecondition="Sì">
+            <qid>239</qid>
+            <questiondesc>Scansionare lo struccante che utilizza più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Struccante</choice>
+            </choices>
+        </question>
+        <question qid="240" parentquestionID="238" valuecondition="No">
+            <qid>240</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="241" parentquestionID="212" valuecondition="Struccante">
+            <qid>241</qid>
+            <questiondesc>Scelga l'immagine che meglio rappresenta la quantità media di struccante che usa personalmente.</questiondesc>
+            <typeid>12</typeid>
+            <choices>
+                <choice>http://129.132.42.250/~students/questionImages/small1.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/small2.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/small3.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/small4.png</choice>
+            </choices>
+        </question>
+        <question qid="242" parentquestionID="212" valuecondition="Fondotinta o crema coprente">
+            <qid>242</qid>
+            <questiondesc>Quante volte usa in media il fondotinta o la crema coprente?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ogni giorno</choice>
+                <choice>Ogni settimana</choice>
+                <choice>Alcune volte al mese</choice>
+                <choice>Alcune volte all'anno</choice>
+            </choices>
+        </question>
+        <question qid="243" parentquestionID="242" valuecondition="Ogni giorno">
+            <qid>243</qid>
+            <questiondesc>Quante volte usa in media il fondotinta o la crema coprente al giorno? (Più di 4 volte=4)</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>4</max>
+        </question>
+        <question qid="244" parentquestionID="242" valuecondition="Ogni settimana">
+            <qid>244</qid>
+            <questiondesc>Quante volte usa in media il fondotinta o la crema coprente alla settimana?</questiondesc>
+                <typeid>3</typeid>
+            <min>1</min>
+            <max>6</max>
+        </question>
+        <question qid="245" parentquestionID="242" valuecondition="Alcune volte al mese">
+            <qid>245</qid>
+            <questiondesc>Quante volte usa in media il fondotinta o la crema coprente al mese?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>3</max>
+        </question>
+        <question qid="246" parentquestionID="242" valuecondition="Alcune volte all'anno">
+            <qid>246</qid>
+            <questiondesc>Quante volte usa in media il fondotinta o la crema coprente all'anno?</questiondesc>
+            <typeid>3</typeid>
+            <min>1</min>
+            <max>12</max>
+        </question>
+        <question qid="247" parentquestionID="212" valuecondition="Fondotinta o crema coprente">
+            <qid>247</qid>
+            <questiondesc>Sul fondotinta o sulla crema coprente è chiaramente visibile il codice a barre?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <question qid="248" parentquestionID="247" valuecondition="Sì">
+            <qid>248</qid>
+            <questiondesc>Scansionare il fondotinta o crema coprente che utilizza più frequentemente.</questiondesc>
+            <typeid>10</typeid>
+            <choices>
+                <choice>Fondotinta o crema coprente</choice>
+            </choices>
+        </question>
+        <question qid="249" parentquestionID="247" valuecondition="No">
+            <qid>249</qid>
+            <questiondesc>Indicare il nome del prodotto.</questiondesc>
+            <typeid>6</typeid>
+        </question>
+        <question qid="250" parentquestionID="212" valuecondition="Fondotinta o crema coprente">
+            <qid>250</qid>
+            <questiondesc>Scelga l'immagine che meglio rappresenta la quantità media di fondotinta o crema coprente che usa personalmente.</questiondesc>
+            <typeid>12</typeid>
+            <choices>
+                <choice>http://129.132.42.250/~students/questionImages/small1.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/small2.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/small3.png</choice>
+                <choice>http://129.132.42.250/~students/questionImages/small4.png</choice>
+            </choices>
+        </question>
+    </questions>
+</survey>

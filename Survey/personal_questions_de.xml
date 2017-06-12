@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<survey>
+    <surveyname>Personal Questions</surveyname>
+    <questions>
+        <!-- RADIO BUTTON QUESTION -->
+        <question qid="1" >
+            <qid>1</qid>
+            <questiondesc>Ihr Geschlecht ist...</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Weiblich</choice>
+                <choice>Männlich</choice>
+            </choices>
+        </question>
+        <!-- Slider QUESTION -->
+        <question qid="2">
+            <qid>2</qid>
+            <questiondesc>Ihr Geburtsjahr ist...</questiondesc>
+            <typeid>3</typeid>
+            <min>1915</min>
+            <max>2015</max>
+        </question>
+        <!-- Slider QUESTION -->
+        <question qid="3">
+            <qid>3</qid>
+            <questiondesc>Ihre Grösse in Zentimetern beträgt...</questiondesc>
+            <typeid>3</typeid>
+            <min>50</min>
+            <max>210</max>
+        </question>
+        <!-- Slider QUESTION -->
+        <question qid="4">
+            <qid>4</qid>
+            <questiondesc>Ihr Gewicht in Kilogramm beträgt...</questiondesc>
+            <typeid>3</typeid>
+            <min>3</min>
+            <max>150</max>
+        </question>
+        <!-- CHECK BOX QUESTION -->
+        <question qid="5">
+            <qid>5</qid>
+            <questiondesc>Geben Sie bitte Ihre Nationalität an.</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Schweiz</choice>
+                <choice>Deutschland</choice>
+                <choice>Frankreich</choice>
+                <choice>Italien</choice>
+                <choice>Österreich</choice>
+                <choice>Spanien</choice>
+                <choice>Portugal</choice>
+                <choice>Andere</choice>
+            </choices>
+        </question>
+        <!-- NUMBER INPUT QUESTION -->
+        <question qid="6">
+            <qid>6</qid>
+            <questiondesc>Ihre PLZ ist?</questiondesc>
+            <typeid>9</typeid>
+        </question>
+        <!-- RADIO BUTTON QUESTION -->
+        <question qid="7" >
+            <qid>7</qid>
+            <questiondesc>Die letzte Schule, die Sie abgeschlossen haben, ist:</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Primarschule</choice>
+                <choice>Real-, Sekundar-, Bezirksschule</choice>
+                <choice>Berufs-, Gewerbe-, KV-Schule</choice>
+                <choice>Mittel-, Handelsschule, Gymnasium</choice>
+                <choice>FH, UNI (Technikum, HWV, ETH, usw.)</choice>
+            </choices>
+        </question>
+        <!-- ALLERGIE -->
+        <question qid="8" >
+            <qid>8</qid>
+            <questiondesc>Hatten Sie im letzten Jahr allergische Hautreaktionen?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ja</choice>
+                <choice>Nein</choice>
+            </choices>
+        </question>
+        <!-- parte corpo -->
+        <question qid="9" parentquestionID="8" valuecondition="Ja">
+            <qid>9</qid>
+            <questiondesc>Wo auf Ihrem Körper traten diese Allergien auf?</questiondesc>
+            <typeid>2</typeid>
+            <imageURL></imageURL>
+            <choices>
+                <choice>Gesicht, Augen, Lippen</choice>
+                <choice>Kopf</choice>
+                <choice>Hals</choice>
+                <choice>Rücken</choice>
+                <choice>Brust/Brüste</choice>
+                <choice>Bauch</choice>
+                <choice>Hände</choice>
+                <choice>Arme, Handgelenke</choice>
+                <choice>Achselhöhlen</choice>
+                <choice>Intimzonen</choice>
+                <choice>Beine</choice>
+                <choice>Füsse</choice>
+            </choices>
+        </question>
+        <!-- SE si o no -->
+        <question qid="10" parentquestionID="8" valuecondition="Ja">
+            <qid>10</qid>
+            <questiondesc>War dies eine allergische Kontaktdermatitis (durch einen Arzt oder Dermatologen bestätigt)?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ja</choice>
+                <choice>Nein</choice>
+                <choice>Ich weiss es nicht</choice>
+            </choices>
+        </question>
+        <!-- RADIO BUTTON QUESTION -->
+        <question qid="11" >
+            <qid>11</qid>
+            <questiondesc>Dürfen wir Sie für weitere Details kontaktieren? </questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ja</choice>
+                <choice>Nein</choice>
+            </choices>
+        </question>
+        <!-- RADIO BUTTON QUESTION -->
+        <question qid="12" >
+            <qid>12</qid>
+            <questiondesc>Haben Sie Interesse an den Ergebnissen der Studie?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ja</choice>
+                <choice>Nein</choice>
+            </choices>
+        </question>
+        <!-- EMAIL INPUT QUESTION -->
+        <question qid="13" parentquestionID="11|12" valuecondition="Ja|Ja">
+            <qid>13</qid>
+            <questiondesc>Bitte geben Sie eine gültige E-Mail-Adresse ein.</questiondesc>
+            <typeid>7</typeid>
+        </question>
+    </questions>
+</survey>
+
+
+

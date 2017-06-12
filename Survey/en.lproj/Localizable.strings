@@ -1,0 +1,107 @@
+/*
+ Localizable.strings
+ Survey
+ 
+ Created by Charles Balachandran on 27/01/15.
+ Copyright (c) 2015 Charles Balachandran. All rights reserved.
+ */
+
+// translation for home screen random text
+scan_product_slide = "Scan a product";
+household_product_slide = "Household Products";
+personal_care_product_slide = "Personal care products";
+make_up_product_slide = "Cosmetic products";
+how_much_slide = "How much?";
+how_often_slide = "How often?";
+
+
+// controller title
+scan_controller_title = "Scan Product";
+product_detail = "Product details";
+terms_controller_title = "Terms and Conditions";
+scan_identifier = "Scan Your ID";
+feedback = "Feedback";
+
+
+barcode = "Barcode";
+personal_question = "Personal Questions";
+product_questions = "Product Questions";
+personal_details = "Please give us some personal details";
+select_type_product = "Please select the type of the product:";
+household_pruducts = "Household Products";
+laundry_product = "Laundry Product";
+personal_care_product = "Personal Care Product";
+connect_to_internet = "Please connect to the internet";
+terms_condition_header = "This questionnaire will give us an overview of the use of different consumer products in Switzerland. Consumer products contain different kinds of substances, which may enter the body and influence our health. Your answers on the used amount, type, brand, and use frequency of products, as well as the area and location of application, will allow us to calculate how much the general population in Switzerland is exposed to certain substances.";
+point_one = "• Your responses will be kept completely confidential and anonymous and will be stored by ETH Zürich.";
+point_two = "• The statistical evaluation will not allow any inferences about individuals. We are only interested in the habits and practices of the Swiss population.";
+point_three = "• If you complete the questionnaire by our app, we can give you feedback on your personal exposure.";
+point_four = "• Responses will only be used for scientific non-commercial research and teaching.";
+point_five = "• Some questions may appear similar; this has been done on purpose. Please do not skip any questions.";
+point_six = "• Completing the survey will take around 15-30 minutes.";
+feedback_title = "Your Habits have an impact on your Skin";
+
+about_app = "About the App";
+app_find_question = "Where have you found the app?";
+scan_a_barcode = "Please scan a barcode";
+
+news_paper = "Newspaper";
+questionaire_paper = "Paper questionnaire";
+friends = "Friends";
+social_media = "Social media";
+other = "Other";
+
+// Popup feedback
+message_persoanl_question_done = "You have already answered to the personal questions. Do you want to continue with the product questions or restart?";
+message_persoan_product_question_done = "You have answered to all questions. Do you want to redo the App for another person?";
+
+
+// buttons
+skip = "Skip";
+start = "Start";
+next = "Next";
+back = "Back";
+accept = "Accept";
+
+thank_you_participate = "Thank you for participating";
+product_not_identified = "Product not identified";
+start_product_question = "Continue to product questions";
+by_codecheck = "Product data by Codecheck.info";
+
+// Graph controller, this shoud be exactly equal the XML!!!
+shampoo = "Shampoo";
+hair_conditioner = "Conditioner";
+bubble_bath = "Bubble bath";
+shower_gel = "Shower gel";
+hand_soap = "Hand soap";
+body_lotion = "Body lotion or body milk";
+face_cream = "Face cream";
+hand_cream = "Hand cream";
+
+// User usage calculation texts, this shoud be exactly equal the XML!!!. Question id 63
+every_day = "Every day";
+every_week = "Every week";
+sometimes_month = "A few times per month";
+sometimes_year = "A few times per year";
+
+
+// Graph titles
+hair_products = "Hair Products";
+body_products = "Body products";
+body_creams = "Body Moisturizers";
+male = "Male";
+female = "Female";
+
+// Graph feedback
+you_use = "You use %@ kg of %@ per year and other people of your age use %@ kg.";
+you = "You are here";
+you_use_hair_product = "You use %@ kg of hair proudcts per year";
+you_use_body_wash = "You use %@ kg of body wash products per year";
+you_use_cream = "You use %@ kg of cream products per year";
+
+// Social Media
+i_use_fb = "I use %@ per year, and You?";
+
+
+// App Description
+app_description = "With this innovative app you can find out how many cosmetic and cleaning products you use regularly and compare your consumption with your peers. In addition, you can easily report the products used with the help of an integrated barcode scanner. In addition to a feedback on the app, delivered by the app, there is the opportunity to get a more detailed scientific evaluation by email. Your data is collected anonymously for scientific purposes and is a valuable contribution to a research study at the ETH Zurich. Thanks to your answers about the quantities, types of product and brand used it would be possible to gain new insights into how much the Swiss population is exposed to certain ingredients present in consumer products.";

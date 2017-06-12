@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<survey>
+    <surveyname>Personal Questions</surveyname>
+    <questions>
+        <question qid="1" >
+            <qid>1</qid>
+            <questiondesc>What is your gender?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Female</choice>
+                <choice>Male</choice>
+            </choices>
+        </question>
+        <question qid="2">
+            <qid>2</qid>
+            <questiondesc>Which year were you born in?</questiondesc>
+            <min>1915</min>
+            <max>2015</max>
+            <typeid>9</typeid>
+        </question>
+        <question qid="3">
+            <qid>3</qid>
+            <questiondesc>What is your height in cm?</questiondesc>
+            <typeid>3</typeid>
+            <min>50</min>
+            <max>210</max>
+        </question>
+        <question qid="4">
+            <qid>4</qid>
+            <questiondesc>What is your body weight in kg?</questiondesc>
+            <typeid>3</typeid>
+            <min>3</min>
+            <max>150</max>
+        </question>
+        <question qid="5">
+            <qid>5</qid>
+            <questiondesc>Please indicate your nationality.</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Switzerland</choice>
+                <choice>Germany</choice>
+                <choice>France</choice>
+                <choice>Italy</choice>
+                <choice>Austria</choice>
+                <choice>Spain</choice>
+                <choice>Portugal</choice>
+                <choice>Other</choice>
+            </choices>
+        </question>
+        <question qid="6">
+            <qid>6</qid>
+            <questiondesc>Which is your Zip code?</questiondesc>
+            <typeid>9</typeid>
+        </question>
+        <question qid="7" >
+            <qid>7</qid>
+            <questiondesc>Please indicate the highest level of education successfully completed</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Primary school</choice>
+                <choice>Secondary school</choice>
+                <choice>High school</choice>
+                <choice>College or techinical school</choice>
+                <choice>University, advanced technical collage or college graduate</choice>
+            </choices>
+        </question>
+        <!-- ALLERGIE -->
+        <question qid="8" >
+            <qid>8</qid>
+            <questiondesc>Have you experienced allergic skin reaction/s in the last year? </questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Yes</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <!-- parte corpo -->
+        <question qid="9" parentquestionID="8" valuecondition="Yes">
+            <qid>9</qid>
+            <questiondesc>Where on your body were the allergies located?</questiondesc>
+            <typeid>2</typeid>
+            <imageURL></imageURL>
+            <choices>
+                <choice>Face, eye, lips</choice>
+                <choice>Head</choice>
+                <choice>Neck</choice>
+                <choice>Back</choice>
+                <choice>Chest or Breast</choice>
+                <choice>Stomach</choice>
+                <choice>Hands</choice>
+                <choice>Arms, Wrists</choice>
+                <choice>Underarm</choice>
+                <choice>Intimate parts</choice>
+                <choice>Legs</choice>
+                <choice>Feet</choice>
+            </choices>
+        </question>
+        <!-- SE si o no -->
+        <question qid="10" parentquestionID="8" valuecondition="Yes">
+            <qid>10</qid>
+            <questiondesc>Was this an allergic contact dermatitis (determined by a doctor or dermatologist)?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Yes</choice>
+                <choice>No</choice>
+                <choice>I don't know</choice>
+            </choices>
+        </question>
+        <!-- RADIO BUTTON QUESTION -->
+        <question qid="11" >
+            <qid>11</qid>
+            <questiondesc>Are you willing to be contacted for further details?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Yes</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <!-- RADIO BUTTON QUESTION -->
+        <question qid="12" >
+            <qid>12</qid>
+            <questiondesc>Are you interested in learning the results of the survey?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Yes</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <!-- EMAIL INPUT QUESTION -->
+        <question qid="13" parentquestionID="11|12" valuecondition="Yes|Yes">
+            <qid>13</qid>
+            <questiondesc>Please provide your email address.</questiondesc>
+            <typeid>7</typeid>
+        </question>
+    </questions>
+</survey>
+
+
+

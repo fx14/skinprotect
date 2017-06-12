@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<survey>
+    <surveyname>Questions Personnelles</surveyname>
+    <questions>
+        <!-- RADIO BUTTON QUESTION -->
+        <question qid="1" >
+            <qid>1</qid>
+            <questiondesc>Quel est votre sexe?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Féminin</choice>
+                <choice>Masculin</choice>
+            </choices>
+        </question>
+        <!-- Slider QUESTION -->
+        <question qid="2">
+            <qid>2</qid>
+            <questiondesc>Quelle est votre année de naissance?</questiondesc>
+            <typeid>9</typeid>
+        </question>
+        <!-- Slider QUESTION -->
+        <question qid="3">
+            <qid>3</qid>
+            <questiondesc>Quelle est votre taille (en cm)?</questiondesc>
+            <typeid>3</typeid>
+            <min>50</min>
+            <max>210</max>
+        </question>
+        <!-- Slider QUESTION -->
+        <question qid="4">
+            <qid>4</qid>
+            <questiondesc>Combien pesez-vous (en kg)?</questiondesc>
+            <typeid>3</typeid>
+            <min>3</min>
+            <max>150</max>
+        </question>
+        <!-- CHECK BOX QUESTION -->
+        <question qid="5">
+            <qid>5</qid>
+            <questiondesc>Veuillez indiquer votre nationalité.</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Suisse</choice>
+                <choice>Allemagne</choice>
+                <choice>France</choice>
+                <choice>Italie</choice>
+                <choice>Autriche</choice>
+                <choice>Espagne</choice>
+                <choice>Portugal</choice>
+                <choice>Autre</choice>
+            </choices>
+        </question>
+        <!-- NUMBER INPUT QUESTION -->
+        <question qid="6">
+            <qid>6</qid>
+            <questiondesc>Quel est votre code postal?</questiondesc>
+            <typeid>9</typeid>
+        </question>
+        <!-- RADIO BUTTON QUESTION -->
+        <question qid="7" >
+            <qid>7</qid>
+            <questiondesc>Veuillez indiquer le degré d'éducation le plus avancé que vous avez achevé.</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Ecole primaire</choice>
+                <choice>Ecole secondaire</choice>
+                <choice>Formation professionnelle initiale (avec ou sans maturité professionnelle)</choice>
+                <choice>Collège, Lycée, gymnase (maturité gymnasiale)</choice>
+                <choice>Université, école polytechnique, école supérieure, haute école
+                        spécialisée, haute école pédagogique</choice>
+            </choices>
+        </question>
+        <!-- ALLERGIE -->
+           <question qid="8" >
+            <qid>8</qid>
+            <questiondesc>Avez-vous subi des réactions allergiques de la peau durant l'année dernière?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Oui</choice>
+                <choice>Non</choice>
+            </choices>
+        </question>
+              <!-- parte corpo -->
+        <question qid="9" parentquestionID="8" valuecondition="Oui">
+            <qid>9</qid>
+         <questiondesc>Où était située l'allergie sur votre corps?</questiondesc>
+            <typeid>2</typeid>
+            <imageURL></imageURL>
+            <choices>
+                <choice>Visage, yeux, lèvres</choice>
+                <choice>Tête</choice>
+                <choice>Cou</choice>
+                <choice>Dos</choice>
+                <choice>Poitrine ou seins</choice>
+                <choice>Ventre</choice>
+                <choice>Mains</choice>
+                <choice>Bras/poignets</choice>
+                <choice>Aisselle</choice>
+                <choice>Parties intimes</choice>
+                <choice>Jambes</choice>
+                <choice>Pieds</choice> 
+            </choices>
+        </question>
+           <!-- SE si o no -->
+        <question qid="10" parentquestionID="8" valuecondition="Oui">
+            <qid>10</qid>
+            <questiondesc>Etait-ce une dermatite de contact (constatée par un docteur ou un/e dermatologiste?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Oui</choice>
+                <choice>Non</choice>
+                <choice>Je ne sais pas</choice>
+            </choices>
+        </question>
+        <!-- RADIO BUTTON QUESTION -->
+        <question qid="11" >
+            <qid>11</qid>
+            <questiondesc>Désirez-vous que nous vous contactons pour plus de détails?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Oui</choice>
+                <choice>Non</choice>
+            </choices>
+        </question>
+        
+        <!-- RADIO BUTTON QUESTION -->
+        <question qid="12" >
+            <qid>12</qid>
+            <questiondesc>Seriez-vous intéressé(e) à connaître les résultats de ce sondage?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Oui</choice>
+                <choice>Non</choice>
+            </choices>
+        </question>
+        <!-- EMAIL INPUT QUESTION -->
+        <question qid="13" parentquestionID="11|12" valuecondition="Oui|Oui">
+            <qid>13</qid>
+            <questiondesc>S'il vous plaît, entrez une adresse email valide</questiondesc>
+            <typeid>7</typeid>
+        </question>
+    </questions>
+</survey>

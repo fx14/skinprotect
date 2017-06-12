@@ -1,0 +1,84 @@
+
+/* Class = "IBUIButton"; normalTitle = "Next"; ObjectID = "28D-fk-8dD"; */
+"28D-fk-8dD.normalTitle" = "Next";
+
+/* Class = "IBUILabel"; text = "Some text"; ObjectID = "7oO-lQ-NW5"; */
+"7oO-lQ-NW5.text" = "Some text";
+
+/* Class = "IBUITabBarItem"; title = "Second"; ObjectID = "7uq-kp-NYs"; */
+"7uq-kp-NYs.title" = "Second";
+
+/* Class = "IBUIButton"; normalTitle = "Done"; ObjectID = "DRC-vm-N5o"; */
+"DRC-vm-N5o.normalTitle" = "Done";
+
+/* Class = "IBUILabel"; text = "Answer 1"; ObjectID = "EZF-qs-Yyq"; */
+"EZF-qs-Yyq.text" = "Answer 1";
+
+/* Class = "IBUIButton"; normalTitle = "START"; ObjectID = "J0p-Dx-jAZ"; */
+"J0p-Dx-jAZ.normalTitle" = "START";
+
+/* Class = "IBUINavigationItem"; title = "History List"; ObjectID = "KbK-cj-GJb"; */
+"KbK-cj-GJb.title" = "History List";
+
+/* Class = "IBUILabel"; text = "NIVEA Körperlotion »Körperbalsam Sensitiv 400 ml« 2er-Pack"; ObjectID = "KeU-JY-9if"; */
+"KeU-JY-9if.text" = "NIVEA Körperlotion »Körperbalsam Sensitiv 400 ml« 2er-Pack";
+
+/* Class = "IBUILabel"; text = "Methylparaben, Ethylparaben, aqua, glycerin, caprylic/capric triglyceride, paraffinum liquidum, alcohol denat., cetearyl alcohol, cyclomethicone, dimethicone, glyceryl stearate citrate, octyldodecanol, cera microcristallina, chamomilla recutita flower extract, phenoxyethanol, sodium carbomer, linalool, citronellol, alpha-isomethyl ionone, butylphenyl methylpropional, limonene, benzyl alcohol, benzyl salicylate, parfum"; ObjectID = "POr-Ub-bvI"; */
+"POr-Ub-bvI.text" = "Methylparaben, Ethylparaben, aqua, glycerin, caprylic/capric triglyceride, paraffinum liquidum, alcohol denat., cetearyl alcohol, cyclomethicone, dimethicone, glyceryl stearate citrate, octyldodecanol, cera microcristallina, chamomilla recutita flower extract, phenoxyethanol, sodium carbomer, linalool, citronellol, alpha-isomethyl ionone, butylphenyl methylpropional, limonene, benzyl alcohol, benzyl salicylate, parfum";
+
+/* Class = "IBUINavigationItem"; title = "SCAN PRODUCT"; ObjectID = "RXA-rt-EED"; */
+"RXA-rt-EED.title" = "SCAN PRODUCT";
+
+/* Class = "IBUILabel"; text = "Ingredients"; ObjectID = "Sui-9p-d58"; */
+"Sui-9p-d58.text" = "Ingredients";
+
+/* Class = "IBUIButton"; normalTitle = "b2"; ObjectID = "TYd-0W-76z"; */
+"TYd-0W-76z.normalTitle" = "b2";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "Tcb-OE-MT3"; */
+"Tcb-OE-MT3.title" = "Item";
+
+/* Class = "IBUITabBarItem"; title = "History"; ObjectID = "Ugt-Dr-SMC"; */
+"Ugt-Dr-SMC.title" = "History";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "Xpj-hU-viE"; */
+"Xpj-hU-viE.normalTitle" = "Back";
+
+/* Class = "IBUITabBarItem"; title = "Scan"; ObjectID = "chb-HI-srr"; */
+"chb-HI-srr.title" = "Scan";
+
+/* Class = "IBUITabBarItem"; title = "Info"; ObjectID = "eTq-gq-wUp"; */
+"eTq-gq-wUp.title" = "Info";
+
+/* Class = "IBUILabel"; text = "INFO VIEW"; ObjectID = "gy3-qa-dt1"; */
+"gy3-qa-dt1.text" = "INFO VIEW";
+
+/* Class = "IBUILabel"; text = "NIVEA Körperlotion"; ObjectID = "kY5-ib-DpZ"; */
+"kY5-ib-DpZ.text" = "NIVEA Körperlotion";
+
+/* Class = "IBUIButton"; normalTitle = "Next"; ObjectID = "kkQ-Nc-Mmy"; */
+"kkQ-Nc-Mmy.normalTitle" = "Next";
+
+/* Class = "IBUINavigationItem"; title = "SCAN PRODUCT"; ObjectID = "lyu-5s-N0v"; */
+"lyu-5s-N0v.title" = "SCAN PRODUCT";
+
+/* Class = "IBUILabel"; text = "4005808702961"; ObjectID = "mEK-p6-xeu"; */
+"mEK-p6-xeu.text" = "4005808702961";
+
+/* Class = "IBUILabel"; text = "Answer 1"; ObjectID = "oUh-wq-qyk"; */
+"oUh-wq-qyk.text" = "Answer 1";
+
+/* Class = "IBUILabel"; text = "Answer 1"; ObjectID = "puB-eN-MTq"; */
+"puB-eN-MTq.text" = "Answer 1";
+
+/* Class = "IBUITabBarItem"; title = "First"; ObjectID = "r2n-Dm-1U7"; */
+"r2n-Dm-1U7.title" = "First";
+
+/* Class = "IBUILabel"; text = "question"; ObjectID = "vkp-sn-xDm"; */
+"vkp-sn-xDm.text" = "question";
+
+/* Class = "IBUIButton"; normalTitle = "b1"; ObjectID = "xj8-Zs-PG7"; */
+"xj8-Zs-PG7.normalTitle" = "b1";
+
+/* Class = "IBUILabel"; text = "Details about the project and contact details"; ObjectID = "yQy-PT-pgg"; */
+"yQy-PT-pgg.text" = "Details about the project and contact details";

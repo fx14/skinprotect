@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Configuration" representedClassName="Survey.Configuration" syncable="YES">
+        <attribute name="app_found_from" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="app_identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="app_question" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personal_question" optional="YES" attributeType="String" minValueString="0" maxValueString="1" syncable="YES"/>
+        <attribute name="product_question" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="terms_accepted" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="FeedbackResult" syncable="YES">
+        <attribute name="bodyLotionOkAlertMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bodyLotionWarningAlertMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bodyWashProductAverage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bubbleBathOkAlertMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bubbleBathWarningAlertMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creamProductAverage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="faceCreamOkAlertMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="faceCreamWarningAlertMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hairProductAverage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="handCreamOkAlertMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="handCreamWarningAlertMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="handSoapOkAlertMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="handSoapWarningAlertMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hariConditionerOkAlertMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hariConditionerWarningAlertMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shampooOkAlertMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shampooWarningAlertMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="showerGelOkAlertMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="showerGelWarningAlertMessage" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PersonalQuestion" representedClassName="Survey.PersonalQuestion" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="body_part" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="doctor_contact" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="education" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nationality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skin_allergy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Configuration" positionX="-63" positionY="-18" width="128" height="150"/>
+        <element name="PersonalQuestion" positionX="-63" positionY="27" width="128" height="225"/>
+        <element name="FeedbackResult" positionX="-63" positionY="99" width="128" height="330"/>
+    </elements>
+</model>

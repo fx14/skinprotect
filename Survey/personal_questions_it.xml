@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<survey>
+      <!-- PERSONAL QUESTION -->
+    <surveyname>Personal Questions</surveyname>
+    <questions>
+        <question qid="1" >
+            <qid>1</qid>
+            <questiondesc>Indichi per cortesia il suo sesso.</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Donna</choice>
+                <choice>Uomo</choice>
+            </choices>
+        </question>
+        <question qid="2">
+            <qid>2</qid>
+            <questiondesc>In che anno è nata/o?</questiondesc>
+            <typeid>9</typeid>
+        </question>
+        <question qid="3">
+            <qid>3</qid>
+            <questiondesc>Quale è la Sua altezza in centimetri?</questiondesc>
+            <typeid>3</typeid>
+            <min>50</min>
+            <max>210</max>
+        </question>
+        <question qid="4">
+            <qid>4</qid>
+            <questiondesc>Quale è il Suo peso in chili?</questiondesc>
+            <typeid>3</typeid>
+            <min>3</min>
+            <max>150</max>
+        </question>
+        <question qid="5">
+            <qid>5</qid>
+            <questiondesc>Indichi per favore la Sua nazionalità.</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Svizzera</choice>
+                <choice>Tedesca</choice>
+                <choice>Francese</choice>
+                <choice>Italiana</choice>
+                <choice>Austriaca</choice>
+                <choice>Spagnola</choice>
+                <choice>Portoghese</choice>
+                <choice>Altro</choice>
+            </choices>
+        </question>
+        <question qid="6">
+            <qid>6</qid>
+            <questiondesc>Qual è il Suo codice di avviamento postale (CAP)?</questiondesc>
+            <typeid>9</typeid>
+        </question>
+        <question qid="7" >
+            <qid>7</qid>
+            <questiondesc>Indichi per favore il livello di formazione più avanzato che ha completato con successo.</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Scuola elementare</choice>
+                <choice>Scuola media</choice>
+                <choice>Scuole di formazione professionale (con o senza maturità professionale)</choice>
+                <choice>Scuola media superiore (liceo o SCC)</choice>
+                <choice>Università, politecnico federale o scuola universitaria professionale (SUP) o alta scuola pedagogica</choice>
+            </choices>
+        </question>
+        <!-- ALLERGIE -->
+           <question qid="8" >
+            <qid>8</qid>
+            <questiondesc>Ha già avuto delle manifestazioni allergiche sulla pelle nel corso dell’ultimo anno?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <!-- PARTE DRL CORPO-->
+        <question qid="9" parentquestionID="8" valuecondition="Sì">
+            <qid>9</qid>
+         <questiondesc>Dove sul Suo corpo erano presenti queste allergie?</questiondesc>
+            <typeid>2</typeid>
+            <imageURL></imageURL>
+            <choices>
+                <choice>Faccia, occhi, labbra</choice>
+                <choice>Testa</choice>
+                <choice>Collo</choice>
+                <choice>Schiena</choice>
+                <choice>Petto o seno</choice>
+                <choice>Addome</choice>
+                <choice>Mani</choice>
+                <choice>Braccia, polsi</choice>
+                <choice>Ascella</choice>
+                <choice>Parti intime</choice>
+                <choice>Gambe</choice>
+                <choice>Piedi</choice> 
+            </choices>
+        </question>
+           <!-- Se Sì o no -->
+        <question qid="10" parentquestionID="8" valuecondition="Sì">
+            <qid>10</qid>
+            <questiondesc>Queste allegie sono state diagnosticate da un medico o medico specialista come dermatiti da contatto?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+                <choice>Non lo so</choice>
+            </choices>
+        </question>
+        <!-- RADIO BUTTON QUESTION -->
+        <question qid="11" >
+            <qid>11</qid>
+            <questiondesc>È disponibile a partecipare ad ulteriori sondaggi?</questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        
+        <!-- RADIO BUTTON QUESTION -->
+        <question qid="12" >
+            <qid>12</qid>
+            <questiondesc>Desidera essere informata/o sui risultati finali di questo questionario? </questiondesc>
+            <typeid>1</typeid>
+            <choices>
+                <choice>Sì</choice>
+                <choice>No</choice>
+            </choices>
+        </question>
+        <!-- EMAIL INPUT QUESTION -->
+        <question qid="13" parentquestionID="11|12" valuecondition="Sì|Sì">
+            <qid>13</qid>
+            <questiondesc>Si prega di inserire un indirizzo e-mail valido</questiondesc>
+            <typeid>7</typeid>
+        </question>
+    </questions>
+</survey>
